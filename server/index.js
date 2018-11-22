@@ -27,7 +27,6 @@ const resolvers = {
     Mutation: {
         addUser: async (_, args) => {
             try {
-                console.log("Trying to mutate");
                 let response = await User.create(args);
                 return response;
             } catch(e) {
